@@ -1,0 +1,60 @@
+.btn--primary {
+  font-family: inherit;
+  font-size: 1.7rem;
+  color: #222 !important;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  display: inline-block;
+  border: none;
+  border-radius: 100px;
+  padding: 1.35rem 4.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--text {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  span {
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  &:hover span {
+    transform: translateY(3px);
+  }
+  &:hover {
+    color: var(--color-primary-darker);
+  }
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  right: 2.2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: 400;
+}
+
+.btn--close-cookies {
+  padding: 1.1rem 2.5rem !important;
+
+  background-color: var(--color-primary);
+  &:hover {
+    background-color: var(--color-primary-darker);
+  }
+}

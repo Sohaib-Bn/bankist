@@ -1,0 +1,86 @@
+.operations {
+  &__container {
+    background-color: #fff;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.04);
+    position: relative;
+  }
+
+  &__content {
+    display: none;
+    padding: 6.5rem 7rem;
+
+    &--1 {
+      z-index: 10;
+    }
+
+    &--2 {
+      z-index: 5;
+    }
+
+    &--3 {
+      z-index: 5;
+    }
+  }
+
+  &__icon-box {
+    width: 6.5rem;
+    height: 6.5rem;
+    &--1 {
+      color: var(--color-secondary);
+      background-color: var(--color-secondary-opacity);
+    }
+    &--2 {
+      color: var(--color-primary);
+      background-color: var(--color-primary-opacity);
+    }
+    &--3 {
+      color: var(--color-tertiary);
+      background-color: var(--color-tertiary-opacity);
+    }
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: currentColor;
+  }
+
+  &__tab-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    transform: translateY(-50%);
+
+    button {
+      font-weight: 500;
+      padding: 1.2rem 3.7rem;
+
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &--tab-transfer {
+    background-color: var(--color-secondary);
+    &:hover {
+      background-color: var(--color-secondary-darker);
+    }
+  }
+  &--tab-loans {
+    background-color: var(--color-primary);
+    &:hover {
+      background-color: var(--color-primary-darker);
+    }
+  }
+  &--tab-close {
+    background-color: var(--color-tertiary);
+    &:hover {
+      background-color: var(--color-tertiary-darker);
+    }
+  }
+}

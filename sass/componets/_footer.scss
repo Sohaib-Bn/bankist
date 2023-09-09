@@ -1,0 +1,57 @@
+.start-with-us {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.footer {
+  &__bottom {
+    border-top: 1px solid #444;
+    padding-top: 10rem;
+  }
+  &__nav {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      color: #eee;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:link:hover,
+    &:visited:hover {
+      color: var(--color-primary-darker);
+    }
+  }
+
+  &__logo {
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 1.4rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:link:hover,
+    &:visited:hover {
+      color: var(--color-primary-darker);
+    }
+  }
+}
